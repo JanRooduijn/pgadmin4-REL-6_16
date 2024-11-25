@@ -1,3 +1,5 @@
+Update: my solutions can now be found in the folders `semgrep-rules` and `codeql-custom-queries`. 
+
 # Tutorial on Q-SAST tools
 This is a tutorial on two query-based SAST (or Q-SAST) tools, namely CodeQL and Semgrep, as part of a workshop by NCSC-NL at Avans Hogeschool. A significant advantage of Q-SAST tools over conventional SAST tools is that the community can contribute to the Q-SAST's capabilities by writing their own rules. This makes it easier to quickly respond to newly discovered vulnerability classes. It also makes Q-SAST tools suitable for information-gathering during penetration tests and code reviews.
 

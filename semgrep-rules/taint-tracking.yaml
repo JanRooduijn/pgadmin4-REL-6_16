@@ -1,0 +1,13 @@
+rules:
+- id: request-subprocess-taint-tracking
+  languages:
+    - python
+  message: Untrusted user-input flows from 'flask.request.$ATTRIBUTE' into a call to 'subprocess.$METHOD'.
+  mode: taint
+  pattern-sources:
+    - pattern: flask.request.$ATTRIBUTE
+  pattern-sinks:
+    - pattern: subprocess.$METHOD(...)
+  severity: WARNING
+
+  # https://github.com/semgrep/semgrep-rules/blob/develop/python/flask/security/injection/subprocess-injection.yaml

@@ -1,0 +1,7 @@
+rules:
+- id: request-attribute-usages
+  languages:
+    - python
+  message: The attribute '$ATTRIBUTE' of the module 'flask.request' is used here.
+  pattern: flask.request.$ATTRIBUTE
+  severity: INFO

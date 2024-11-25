@@ -1,0 +1,7 @@
+rules:
+- id: find-subprocess-method-calls
+  languages:
+    - python
+  message: The method $METHOD of the module subprocess is called here.
+  pattern: subprocess.$METHOD(...)
+  severity: INFO
